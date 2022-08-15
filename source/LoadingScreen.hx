@@ -72,7 +72,7 @@ class LoadingScreen extends FlxTypedGroup<FlxSprite>
 		loadTxtProgress = new FlxSprite();
 		add(loadTxtProgress);
 
-		loadTxt = new FlxText(0, 0, 0, "Loading...", 30);
+		loadTxt = new FlxText(0, 0, 0, "Carregando...", 30);
 		loadTxt.setFormat(HelperFunctions.returnMenuFont(loadTxt), 24, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		loadTxt.x = 5;
 		loadTxt.y = FlxG.height - loadTxt.height - 5;

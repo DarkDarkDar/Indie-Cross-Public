@@ -107,7 +107,7 @@ class LoadingState extends MusicBeatState
 
 			FlxGraphic.defaultPersist = false;
 
-			screen.setLoadingText("Done!");
+			screen.setLoadingText("Tudo ok!");
 			trace("Done caching");
 
 			FlxG.camera.fade(FlxColor.BLACK, 1, false);

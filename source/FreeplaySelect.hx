@@ -119,8 +119,8 @@ class FreeplaySelect extends MusicBeatState
 			var str:String = freeplayStrings[i];
 
 			var freeplayItem:FlxSprite = new FlxSprite();
-			if (FlxG.save.data.freeplaylocked[i])
-				freeplayItem.loadGraphic(Paths.image("freeplayselect/locked", "preload"));
+			if (FlxG.save.data.freeplayunlocked[i])
+				freeplayItem.loadGraphic(Paths.image("freeplayselect/unlocked", "preload"));
 			else
 				freeplayItem.loadGraphic(Paths.image("freeplayselect/" + str, "preload"));
 			freeplayItem.origin.set();
@@ -165,12 +165,12 @@ class FreeplaySelect extends MusicBeatState
 
 	function enterSelection()
 	{
-		if (FlxG.save.data.freeplaylocked[curSelected])
+		if (FlxG.save.data.freeplayunlocked[curSelected])
 		{
 			FlxG.camera.shake(0.01);
 			FlxG.sound.play(Paths.sound("weekDeny", "shared"));
 
-			trace(FlxG.save.data.freeplayLocked);
+			trace(FlxG.save.data.freeplayunlocked);
 
 			return;
 		}

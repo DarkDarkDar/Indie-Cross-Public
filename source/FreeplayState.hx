@@ -384,7 +384,7 @@ class FreeplayState extends MusicBeatState
 			alert.cameras = [camHUD];
 			add(alert);
 
-			FlxG.save.data.freeplaylocked[2] = false;
+			FlxG.save.data.freeplayunlocked[2] = false;
 
 			accepted = true;
 		}
@@ -461,7 +461,7 @@ class FreeplayState extends MusicBeatState
 			alert.cameras = [camHUD];
 			add(alert);
 
-			FlxG.save.data.freeplaylocked[2] = false;
+			FlxG.save.data.freeplayunlocked[2] = false;
 
 			accepted = true;
 		}
